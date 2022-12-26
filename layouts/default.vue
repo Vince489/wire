@@ -21,8 +21,12 @@
 
           <!-- primary nav-->
           <div class="hidden md:flex items-center space-x-3">
-            <nuxt-link to="/fighters" class="font-semibold py-3 px-3 text-gray-700">Fighters</nuxt-link>
+            <nuxt-link to="/gamers" class="font-semibold py-3 px-3 text-gray-700">Gamers</nuxt-link>
             <nuxt-link to="/events" class="font-semibold py-3 px-3 text-gray-700">Events</nuxt-link>
+            <nuxt-link to="/register" class="font-semibold py-3 px-3 text-gray-700">Register</nuxt-link>
+            <nuxt-link to="/ebca" class="font-semibold py-3 px-3 text-gray-700">EBCA</nuxt-link>
+            <nuxt-link to="/boxrec" class="font-semibold py-3 px-3 text-gray-700">BoxRec</nuxt-link>
+            <nuxt-link to="/vac" class="font-semibold py-3 px-3 text-gray-700">VAC</nuxt-link>
           </div>
         </div>
 
@@ -30,7 +34,7 @@
         <div class="hidden md:flex items-center space-x-1">
           <div>
             <div>
-              <button type="button" class="hidden user-button flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+              <button type="button" class=" @click=toggle('hidden') md:hidden user-button flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                 <span class="sr-only">Open user menu</span>
                 <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
               </button>
@@ -67,8 +71,10 @@
   </nav>
 
   <!--content goes here-->
-  <div class="container mx-auto p-6">
+  <div class="container mx-auto p-6 pt-24">
     <slot />
   </div>
   </div>
+
 </template>
+

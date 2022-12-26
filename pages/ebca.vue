@@ -1,6 +1,6 @@
 <template>
-  <div class="pt-24">
-    <h2>Fighters</h2>
+  <div>
+    <h2>EBCA</h2>
   </div>
 </template>
 
