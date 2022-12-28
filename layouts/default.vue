@@ -19,7 +19,7 @@
             
           </div>
 
-          <!-- primary nav-->
+          <!-- primary nav--> 
           <div class="hidden md:flex items-center space-x-3">
             <nuxt-link to="/gamers" class="font-semibold py-3 px-3 text-gray-700">Gamers</nuxt-link>
             <nuxt-link to="/events" class="font-semibold py-3 px-3 text-gray-700">Events</nuxt-link>
@@ -34,7 +34,7 @@
         <div class="hidden md:flex items-center space-x-1">
           <div>
             <div>
-              <button type="button" class=" @click=toggle('hidden') md:hidden user-button flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+              <button type="button" @click="toggleMenu" class="md:hidden user-button flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                 <span class="sr-only">Open user menu</span>
                 <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
               </button>
@@ -54,7 +54,7 @@
 
         <!-- mobile button-->
         <div class="md:hidden flex items-center">
-          <button class="mobile-menu-button">
+          <button @click="toggleMenu" class="mobile-menu-button">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>           
@@ -64,12 +64,12 @@
     </div>
 
     <!--mobile menu-->
-    <div class="mobile-menu hidden md:hidden">
-      <nuxt-link to="/fighters" class=" font-semibold block py-3 px-4 hover:bg-gray-200">Fighters</nuxt-link>
+    <div v-if="false" id="mobile-menu" class="mobile-menu md:hidden">
+      <nuxt-link to="/gamers" class=" font-semibold block py-3 px-4 hover:bg-gray-200">Gamers</nuxt-link>
       <nuxt-link to="/events" class="block py-3 px-4 hover:bg-gray-200">Events</nuxt-link>
     </div>
   </nav>
-
+  
   <!--content goes here-->
   <div class="container mx-auto p-6 pt-24">
     <slot />
@@ -77,4 +77,8 @@
   </div>
 
 </template>
+
+<script setup>
+
+</script>
 
