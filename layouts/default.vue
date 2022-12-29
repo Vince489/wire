@@ -63,7 +63,6 @@
                   type="button"
                   @click="toggleProfile"
                   class="user-button flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                  id="user-menu-button"
                   aria-expanded="false"
                   aria-haspopup="true"
                 >
@@ -142,14 +141,22 @@
 
       <!--mobile menu-->
       <div v-if="toggle_menu" id="mobile-menu" class="mobile-menu md:hidden">
-        <nuxt-link
-          to="/gamers"
-          class="font-semibold block py-3 px-4 hover:bg-gray-200"
-          >Gamers</nuxt-link
-        >
-        <nuxt-link to="/events" class="block py-3 px-4 hover:bg-gray-200"
-          >Events</nuxt-link
-        >
+        
+        <nuxt-link to="/gamers"
+          class="font-semibold block py-3 px-4 hover:bg-gray-200">
+          Gamers</nuxt-link>
+
+        <nuxt-link to="/events" 
+          class="font-semibold block py-3 px-4 hover:bg-gray-200">
+          Events</nuxt-link>
+
+        <nuxt-link to="/events" 
+          class="font-semibold block py-3 px-4 hover:bg-gray-200">
+          EBCA</nuxt-link>
+
+        <nuxt-link to="/events" 
+          class="font-semibold block py-3 px-4 hover:bg-gray-200">
+          BoxRec</nuxt-link>
       </div>
     </nav>
 
@@ -161,14 +168,14 @@
 </template>
 
 <script setup>
-  let toggle_menu = ref(false);
-  let toggle_profile = ref(false);
+  let toggle_menu = ref(false)
+  let toggle_profile = ref(false)
 
   function toggleMenu() {
-    toggle_menu.value = !toggle_menu.value;
+    toggle_menu.value = !toggle_menu.value
   }
 
   function toggleProfile() {
-    toggle_profile.value = !toggle_profile.value;
+    toggle_profile.value = !toggle_profile.value
   }
 </script>
