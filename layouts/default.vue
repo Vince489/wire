@@ -79,6 +79,8 @@
 </template>
 
 <script setup>
-
+  function toggleMenu() {
+    console.log('menu toggled')
+  }
 </script>
 
