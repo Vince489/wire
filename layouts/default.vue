@@ -23,7 +23,6 @@
           <div class="hidden md:flex items-center space-x-3">
             <nuxt-link to="/gamers" class="font-semibold py-3 px-3 text-gray-700">Gamers</nuxt-link>
             <nuxt-link to="/events" class="font-semibold py-3 px-3 text-gray-700">Events</nuxt-link>
-            <nuxt-link to="/register" class="font-semibold py-3 px-3 text-gray-700">Register</nuxt-link>
             <nuxt-link to="/ebca" class="font-semibold py-3 px-3 text-gray-700">EBCA</nuxt-link>
             <nuxt-link to="/boxrec" class="font-semibold py-3 px-3 text-gray-700">BoxRec</nuxt-link>
           </div>
