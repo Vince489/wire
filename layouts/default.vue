@@ -26,7 +26,6 @@
             <nuxt-link to="/register" class="font-semibold py-3 px-3 text-gray-700">Register</nuxt-link>
             <nuxt-link to="/ebca" class="font-semibold py-3 px-3 text-gray-700">EBCA</nuxt-link>
             <nuxt-link to="/boxrec" class="font-semibold py-3 px-3 text-gray-700">BoxRec</nuxt-link>
-            <nuxt-link to="/vac" class="font-semibold py-3 px-3 text-gray-700">VAC</nuxt-link>
           </div>
         </div>
 
