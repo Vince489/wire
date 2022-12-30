@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- navbar goes here -->
-    <nav class="bg-gray-300 fixed inset-x-0">
+    <nav id="navbar" class="bg-gray-300 fixed inset-x-0">
       <div class="px-6 pb-1 mx-auto">
         <div class="flex justify-between">
           <div class="flex space-x-4">
@@ -56,13 +56,25 @@
           </div>
 
           <!--second nav-->
-          <div class="hidden md:flex items-center space-x-1">
+          <div class="invisible md:visible md:flex items-center space-x-1">
             <div>
-              <div>
+              <div id="profile-btn">
                 <button
                   type="button"
                   @click="toggleProfile"
-                  class="user-button flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                  class="
+                    user-button
+                    flex
+                    rounded-full
+                    bg-gray-800
+                    text-sm
+                    focus:outline-none
+                    focus:ring-2
+                    focus:ring-white
+                    focus:ring-offset-2
+                    focus:ring-offset-gray-800
+                  "
+                  id="user-menu-button"
                   aria-expanded="false"
                   aria-haspopup="true"
                 >
@@ -77,8 +89,23 @@
 
               <div
                 v-if="toggle_profile"
-                class="user-menu absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                class="
+                  user-menu
+                  absolute
+                  right-0
+                  z-10
+                  mt-2
+                  w-48
+                  origin-top-right
+                  rounded-md
+                  bg-white
+                  py-1
+                  shadow-lg
+                  ring-1 ring-black ring-opacity-5
+                  focus:outline-none
+                "
                 role="menu"
+                id="profile-menu"
                 aria-orientation="vertical"
                 aria-labelledby="user-menu-button"
                 tabindex="-1"
@@ -118,7 +145,7 @@
           </div>
 
           <!-- mobile button-->
-          <div class="md:hidden flex items-center">
+          <div id="menu-btn" class="md:hidden flex items-center">
             <button @click="toggleMenu" class="mobile-menu-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -141,22 +168,14 @@
 
       <!--mobile menu-->
       <div v-if="toggle_menu" id="mobile-menu" class="mobile-menu md:hidden">
-        
-        <nuxt-link to="/gamers"
-          class="font-semibold block py-3 px-4 hover:bg-gray-200">
-          Gamers</nuxt-link>
-
-        <nuxt-link to="/events" 
-          class="font-semibold block py-3 px-4 hover:bg-gray-200">
-          Events</nuxt-link>
-
-        <nuxt-link to="/events" 
-          class="font-semibold block py-3 px-4 hover:bg-gray-200">
-          EBCA</nuxt-link>
-
-        <nuxt-link to="/events" 
-          class="font-semibold block py-3 px-4 hover:bg-gray-200">
-          BoxRec</nuxt-link>
+        <nuxt-link
+          to="/gamers"
+          class="font-semibold block py-3 px-4 hover:bg-gray-200"
+          >Gamers</nuxt-link
+        >
+        <nuxt-link to="/events" class="block py-3 px-4 hover:bg-gray-200"
+          >Events</nuxt-link
+        >
       </div>
     </nav>
 
@@ -168,14 +187,32 @@
 </template>
 
 <script setup>
-  let toggle_menu = ref(false)
-  let toggle_profile = ref(false)
+  let toggle_menu = ref(false);
+  let toggle_profile = ref(false);
+
+  onMounted(() => {
+    window.addEventListener("click", function (e) {
+      console.log(document.getElementById("menu-btn").contains(e.target));
+      if (
+        document.getElementById("mobile-menu") &&
+        !document.getElementById("menu-btn").contains(e.target)
+      ) {
+        toggle_menu.value = false;
+      }
+      if (
+        document.getElementById("profile-menu") &&
+        !document.getElementById("profile-btn").contains(e.target)
+      ) {
+        toggle_profile.value = false;
+      }
+    });
+  });
 
   function toggleMenu() {
-    toggle_menu.value = !toggle_menu.value
+    toggle_menu.value = !toggle_menu.value;
   }
 
   function toggleProfile() {
-    toggle_profile.value = !toggle_profile.value
+    toggle_profile.value = !toggle_profile.value;
   }
 </script>
