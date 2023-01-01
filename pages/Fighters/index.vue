@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Gamers</h2>
+    <h2>Fighters</h2>
   </div>
 
   <!-- <div class="grid grid-cols-4 gap-5">

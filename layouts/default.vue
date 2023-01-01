@@ -33,9 +33,9 @@
             <!-- primary nav-->
             <div class="hidden md:flex items-center space-x-3">
               <nuxt-link
-                to="/gamers"
+                to="/fighters"
                 class="font-semibold py-3 px-3 text-gray-700"
-                >Gamers</nuxt-link
+                >Fighters</nuxt-link
               >
               <nuxt-link
                 to="/events"
@@ -169,9 +169,9 @@
       <!--mobile menu-->
       <div v-if="toggle_menu" id="mobile-menu" class="mobile-menu md:hidden">
         <nuxt-link
-          to="/gamers"
+          to="/fighters"
           class="font-semibold block py-3 px-4 hover:bg-gray-200"
-          >Gamers</nuxt-link
+          >Fighters</nuxt-link
         >
         <nuxt-link to="/events" class="block py-3 px-4 hover:bg-gray-200"
           >Events</nuxt-link
