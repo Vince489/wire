@@ -8,7 +8,7 @@
         <h2>Corby Baker</h2>
       </div>
 
-      <div class="absolute top-0.5 mt-2 left-0.5 ml-2 bg-[#3672bb] font-semibold text-white px-3 py-2 rounded-full text-sm">82</div>
+      <div class="absolute top-0.5 mt-3 left-0.5 ml-3 bg-[#3672bb] font-semibold text-white px-3 py-2 rounded-full text-sm">82</div>
 
       <div class="w-48 h-64 m-auto">
         <img src="https://scontent.ftpa1-1.fna.fbcdn.net/v/t39.30808-6/313187432_185175870744715_5901823652848492809_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=gQ55nRNUI-kAX_8U8d0&_nc_ht=scontent.ftpa1-1.fna&oh=00_AfD0xaHsbVl9nqgeotnobcXH_CHewYU07Safmt6AFc7tRw&oe=63B81004" alt="me">
@@ -66,7 +66,7 @@
     <h2>Clubber Lang</h2>
   </div>
 
-  <div class="absolute top-0.5 mt-2 left-0.5 ml-2 bg-[#3672bb] font-semibold text-white px-3 py-2 rounded-full text-sm">80</div>
+  <div class="absolute top-0.5 mt-3 left-0.5 ml-3 bg-[#3672bb] font-semibold text-white px-3 py-2 rounded-full text-sm">80</div>
 
   <div class="w-48 m-auto h-64">
     <img src="https://scontent.ftpa1-2.fna.fbcdn.net/v/t39.30808-6/313197716_185179717410997_9056183693428324314_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=XCSyH1zwr3sAX_vLcdm&_nc_ht=scontent.ftpa1-2.fna&oh=00_AfDBrqcWXOWVnnXQNH8PlF2h9UdTqcTqkdalHLpFpgThQg&oe=63B7FA73" alt="me">
@@ -126,7 +126,7 @@
   <h2>Wata Bully</h2>
 </div>
 
-<div class="absolute top-0.5 mt-2 left-0.5 ml-2 bg-[#3672bb] font-semibold text-white px-3 py-2 rounded-full text-sm">86</div>
+<div class="absolute top-0.5 mt-3 left-0.5 ml-3 bg-[#3672bb] font-semibold text-white px-3 py-2 rounded-full text-sm">86</div>
 
 <div class="w-48 h-64 m-auto">
   <img src="https://scontent.ftpa1-2.fna.fbcdn.net/v/t39.30808-6/322961307_551460366653891_708550471661016674_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=TzVX9FXkUmQAX_Q24wD&_nc_ht=scontent.ftpa1-2.fna&oh=00_AfDC5AXAFkYVbuyW6fFrBexPdpWPzW5V-IElQqtSWQFgrQ&oe=63B7FEDD" alt="me">
