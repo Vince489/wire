@@ -48,9 +48,9 @@
                 >EBCA</nuxt-link
               >
               <nuxt-link
-                to="/boxrec"
+                to="/gamers"
                 class="font-semibold py-3 px-3 text-gray-700"
-                >BoxRec</nuxt-link
+                >Gamers</nuxt-link
               >
             </div>
           </div>
@@ -81,7 +81,7 @@
                   <span class="sr-only">Open user menu</span>
                   <img
                     class="hidden h-8 w-8 rounded-full"
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    src="https://scontent.ftpa1-2.fna.fbcdn.net/v/t39.30808-6/313197716_185179717410997_9056183693428324314_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=XCSyH1zwr3sAX_vLcdm&_nc_ht=scontent.ftpa1-2.fna&oh=00_AfDBrqcWXOWVnnXQNH8PlF2h9UdTqcTqkdalHLpFpgThQg&oe=63B7FA73"
                     alt=""
                   />
                 </button>

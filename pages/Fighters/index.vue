@@ -40,7 +40,7 @@
         </div>  
 
         <div>   
-          <div class="font-semibold pt-2 justify-center record flex gap-4">
+          <div class="font-semibold pt-4 justify-center record flex gap-4">
             <div class="wins text-green-700">
               <p>0<span> KO WINS</span></p>        
             </div>
@@ -98,7 +98,7 @@
     </div>  
 
     <div>   
-      <div class="font-semibold pt-2 justify-center record flex gap-4">
+      <div class="font-semibold pt-4 justify-center record flex gap-4">
         <div class="wins text-green-700">
           <p>1<span> KO WINS</span></p>        
         </div>
@@ -158,7 +158,7 @@
   </div>  
 
   <div>   
-    <div class="font-semibold pt-2 justify-center record flex gap-4">
+    <div class="font-semibold pt-4 justify-center record flex gap-4">
       <div class="wins text-green-700">
         <p>0<span> KO WINS</span></p>        
       </div>

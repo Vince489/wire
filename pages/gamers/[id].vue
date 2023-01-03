@@ -1,11 +1,14 @@
 <template>
   <div>
-    <h2>BoxRec</h2>
-  </div>  
+    <p>Gamers</p>
+  </div>
 </template>
 
 <script setup>
+
+
 </script>
+
 
 <style scoped>
 
