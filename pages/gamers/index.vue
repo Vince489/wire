@@ -11,7 +11,7 @@
 <script setup>
 
 // fetch the gamer
-const { data: gamers } = await useFetch('http://localhost:4000/gamers/')
+const { data: gamers } = await useFetch('https://gamer-api.onrender.com/gamers')
 </script>
 
 <style scoped>
