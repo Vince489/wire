@@ -11,7 +11,7 @@
       <div class="absolute top-0.5 mt-3 left-0.5 ml-3 bg-[#3672bb] font-semibold text-white px-3 py-2 rounded-full text-sm">82</div>
 
       <div class="w-48 h-64 m-auto">
-        <img src=""
+        <img src="https://postimg.cc/HrV7pfFp"
       </div>
 
       <div>
