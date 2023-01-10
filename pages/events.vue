@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <h2>Events</h2>
+  <h2>Events</h2>
+
+  <div class="container mx-auto mt-8">
+    <FighterCard />
   </div>
 </template>
 

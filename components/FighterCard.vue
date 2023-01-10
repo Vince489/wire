@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="relative boxer-card-container p-6 mb-6 rounded max-w-xs bg-gray-200">
+    <div class="relative boxer-card-container p-6 mb-6 rounded max-w-xs bg-gray-300">
 
-<div class="boxer-name font-bold pb-2 text-center text-gray-700">
+<div class="boxer-name font-bold pb-4 text-center text-gray-700">
   <h2>Corby Baker</h2>
 </div>
 
@@ -64,6 +64,6 @@
 
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>
