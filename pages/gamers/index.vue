@@ -2,7 +2,7 @@
   <div>
     <div class="grid grid-cols-4 gap-5">
       <div v-for="g in gamers">
-        <nuxt-link :to="`/gamers/${g.id}`">{{ g.gamerTag }} {{ g.wins }}' {{ g.losses }}" ${{ g.balance }}</nuxt-link>
+        <nuxt-link :to="`/gamers/${g.id}`">Gamertag {{ g.gamerTag }} {{ g.ovr }} OVR  {{ g.firstName }} {{ g.lastName }} {{ g.losses }} ${{ g.balance }} {{ g.wins }} Wins {{ g.losses }} Losses {{ g.draws }} Draws </nuxt-link>
       </div>
     </div>
   </div>  
