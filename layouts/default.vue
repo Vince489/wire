@@ -173,8 +173,20 @@
           class="font-semibold block py-3 px-4 hover:bg-gray-200"
           >Fighters</nuxt-link
         >
-        <nuxt-link to="/events" class="block py-3 px-4 hover:bg-gray-200"
-          >Events</nuxt-link
+        <nuxt-link 
+        to="/events" 
+        class="block py-3 px-4 hover:bg-gray-200"
+        >Events</nuxt-link
+        >
+        <nuxt-link 
+        to="/signup" 
+        class="block py-3 px-4 hover:bg-gray-200"
+        >Sign up</nuxt-link
+        >
+        <nuxt-link 
+        to="/ebca" 
+        class="block py-3 px-4 hover:bg-gray-200"
+        >EBCA</nuxt-link
         >
       </div>
     </nav>
