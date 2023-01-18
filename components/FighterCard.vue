@@ -17,7 +17,7 @@
 <div>
 <!--Boxer Name-->
   <div class="boxer-name font-bold py-2 text-center text-gray-700">
-    <h3>WING</h3>
+    <h3>@WING CHUN175879</h3>
   </div>
 
   <div class="text-center record gap-1 flex justify-center font-bold text-white">
@@ -65,7 +65,7 @@
     <div class="relative boxer-card-container p-6 mb-6 rounded max-w-xs bg-gray-300">
 
 <div class="boxer-name font-bold pb-4 text-center text-gray-700">
-  <h2>Randall Cobb</h2>
+  <h2>Randall "Tex" Cobb</h2>
 </div>
 
 <div class="absolute top-0.5 mt-3 left-0.5 ml-3 bg-[#3672bb] font-semibold text-white px-3 py-2 rounded-full text-sm">82</div>
@@ -112,7 +112,7 @@
 
   <div class="pt-4 text-center">
     <p class="font-semibold">Heavyweight</p>
-    <p>HT- 6' 3", WT- 242 lbs, RCH- 78"</p>
+    <p>HT- 6' 3", WT- 242 lbs, RCH- 79"</p>
   </div>
 
   <div class="mt-3 btn2 text-center">View Fighter</div>

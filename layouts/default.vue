@@ -80,9 +80,8 @@
                 >
                   <span class="sr-only">Open user menu</span>
                   <img
-                    class=" h-8 w-8 rounded-full"
-                    src="https://scontent.ftpa1-2.fna.fbcdn.net/v/t39.30808-6/313197716_185179717410997_9056183693428324314_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=XCSyH1zwr3sAX_vLcdm&_nc_ht=scontent.ftpa1-2.fna&oh=00_AfDBrqcWXOWVnnXQNH8PlF2h9UdTqcTqkdalHLpFpgThQg&oe=63B7FA73"
-                    alt=""
+                    class="hidden h-8 w-8 rounded-full"
+                    src="wing.jpg"
                   />
                 </button>
               </div>
