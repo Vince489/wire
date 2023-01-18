@@ -191,7 +191,7 @@
     </nav>
 
     <!--content goes here-->
-    <div class="container mx-auto p-6 pt-24">
+    <div class="container p-6 pt-24">
       <slot />
     </div>
   </div>
