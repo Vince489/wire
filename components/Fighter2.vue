@@ -14,7 +14,7 @@
     
     <div>  
       <div class="boxer-name font-bold py-2 text-center text-gray-700">
-        <h3>{{ gamer.gamerTag }}</h3>
+        <h3>@{{ gamer.gamerTag }}</h3>
       </div>
     
       <div class="text-center record gap-1 flex justify-center font-bold text-white">      
@@ -50,7 +50,7 @@
         <p>HT- {{ gamer.htFt }}' {{ gamer.htIn }}'', WT- {{ gamer.wt }} lbs, RCH- {{ gamer.rch }}"</p>
       </div>
     
-      <div class="mt-3 btn2 text-center">View Fighter</div>  
+      <div class="mt-3 btn2 text-center"><nuxt-link :to="`/fighters/${gamer._id}`">View Fighter</nuxt-link></div>
     </div>
   </div>
 </div>

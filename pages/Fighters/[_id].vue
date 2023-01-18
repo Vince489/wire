@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>{{ gamer.gamerTag }}</p>
+    <p>{{ gamer._id }}</p>
     <p>{{ gamer.wins }}</p>
     <p>{{ gamer.draws }}</p>
     <p>{{ gamer.balance }}</p>   
