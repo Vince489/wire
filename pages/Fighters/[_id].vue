@@ -12,7 +12,7 @@
   const uri = 'https://gamer-api.onrender.com/gamers/' + _id
 
   // fetch fighters
-  const { data: gamer } = await useFetch(uri)
+  const { data: gamer } = await useFetch(uri, { key: _id })
 </script>
 
 <style scoped>
