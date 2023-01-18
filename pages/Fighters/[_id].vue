@@ -1,9 +1,9 @@
 <template>
   <div>
-    <p>{{ fighter.gamerTag }}</p>
-    <p>{{ fighter.wins }}</p>
-    <p>{{ fighter.draws }}</p>
-    <p>${{ fighter.balance }}</p>   
+    <p>{{ gamer.gamerTag }}</p>
+    <p>{{ gamer.wins }}</p>
+    <p>{{ gamer.draws }}</p>
+    <p>{{ gamer.balance }}</p>   
   </div>
 </template>
 
@@ -12,7 +12,7 @@
   const uri = 'https://gamer-api.onrender.com/gamers/' + _id
 
   // fetch fighters
-  const { data: fighter } = await useFetch(uri)
+  const { data: gamer } = await useFetch(uri)
 </script>
 
 <style scoped>

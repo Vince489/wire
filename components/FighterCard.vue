@@ -5,7 +5,7 @@
  <!-- Boxer Name-->   
 
 <div class="boxer-name font-bold pb-4 text-center text-gray-700">
-  <h2>Clubber Lang</h2>
+  <h2>{{ gamerTag }}</h2>
 </div>
 
 <div class="absolute top-0.5 mt-3 left-0.5 ml-3 bg-[#3672bb] font-semibold text-white px-3 py-2 rounded-full text-sm">80</div>
@@ -301,4 +301,6 @@
   </div>
 
 </template>
+
+
 

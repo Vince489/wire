@@ -2,7 +2,7 @@
   <div>
     <navbar />
   </div>
-  <div class="mx-auto">
+  <div class="">
     <slot />
   </div>
 </template>
