@@ -1,4 +1,4 @@
-<template class="flex">
+<template>
   <div >
     <div class="relative boxer-card-container p-6 mb-6 rounded max-w-xs bg-gray-300">
 
