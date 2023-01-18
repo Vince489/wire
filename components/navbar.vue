@@ -81,7 +81,7 @@
                   <span class="sr-only">Open user menu</span>
                   <img
                     class="hidden h-8 w-8 rounded-full"
-                    src="wing.jpg"
+                    src=""
                   />
                 </button>
               </div>
