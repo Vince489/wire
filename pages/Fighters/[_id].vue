@@ -1,17 +1,18 @@
 <template>
   <div>
-    <p>Virtron Registered Fighter {{ _id }}</p><br>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur fuga, rem eaque temporibus blanditiis expedita sit necessitatibus, odit nemo mollitia explicabo et, aliquam ex debitis adipisci natus fugiat repellat officia!</p>
-    
+    <p>{{ fighter.gamerTag }}</p>
+    <p>{{ fighter.wins }}</p>
+    <p>{{ fighter.draws }}</p>
+    <p>${{ fighter.balance }}</p>   
   </div>
 </template>
 
 <script setup>
   const { _id } = useRoute().params
-  const uri = 'https://gamer-api.onrender.com/gamers' + _id
+  const uri = 'https://gamer-api.onrender.com/gamers/' + _id
 
   // fetch fighters
-  const { data: gamer } = await useFetch(uri)
+  const { data: fighter } = await useFetch(uri)
 </script>
 
 <style scoped>
