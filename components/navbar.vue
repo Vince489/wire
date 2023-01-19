@@ -32,7 +32,7 @@
 
             <!-- primary nav-->
             <div class="hidden md:flex items-center space-x-3">
-              <a href="/fighters">Fighters</a>
+              <a class="font-semibold py-3 px-3 text-gray-700" href="/fighters">Fighters</a>
               <nuxt-link
                 to="/events"
                 class="font-semibold py-3 px-3 text-gray-700"
