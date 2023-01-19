@@ -44,9 +44,9 @@
                 >EBCA</nuxt-link
               >
               <nuxt-link
-                to="/gamers"
+                to="/boxrec"
                 class="font-semibold py-3 px-3 text-gray-700"
-                >Gamers</nuxt-link
+                >BoxRec</nuxt-link
               >
             </div>
           </div>
