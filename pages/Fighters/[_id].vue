@@ -9,10 +9,11 @@
 
 <script setup>
   const { _id } = useRoute().params
-  const uri = 'https://gamer-api.onrender.com/gamers/' + _id
+  const uri = 'https://interactive-production.up.railway.app/gamers/' + _id
 
   // fetch fighters
   const { data: gamer } = await useFetch(uri, { key: _id })
+  
 </script>
 
 <style scoped>

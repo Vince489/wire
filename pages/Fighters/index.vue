@@ -9,7 +9,7 @@
 <script setup>
 
 // fetch the gamer
-const { data: gamers } =  useFetch('https://gamer-api.onrender.com/gamers')
+const { data: gamers } =  useFetch('https://interactive-production.up.railway.app/gamers')
 </script>
 
 <style scoped>
