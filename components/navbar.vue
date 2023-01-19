@@ -32,11 +32,7 @@
 
             <!-- primary nav-->
             <div class="hidden md:flex items-center space-x-3">
-              <nuxt-link
-                to="/fighters"
-                class="font-semibold py-3 px-3 text-gray-700"
-                >Fighters</nuxt-link
-              >
+              <a href="/fighters">Fighters</a>
               <nuxt-link
                 to="/events"
                 class="font-semibold py-3 px-3 text-gray-700"
@@ -167,11 +163,7 @@
 
       <!--mobile menu-->
       <div v-if="toggle_menu" id="mobile-menu" class="duration-300 mobile-menu md:hidden">
-        <nuxt-link
-          to="/fighters"
-          class="font-semibold block py-3 px-4 hover:bg-gray-200"
-          >Fighters</nuxt-link
-        >
+        <a href="/fighters">Fighters</a>
         <nuxt-link 
         to="/events" 
         class="block py-3 px-4 hover:bg-gray-200"
