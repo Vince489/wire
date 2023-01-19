@@ -1,5 +1,4 @@
 <template>
-<div class="container mt-10 justify-center gap-6 flex flex-wrap">
   <div class="relative boxer-card-container p-6 mb-6 rounded max-w-xs bg-gray-300">
 
     <div class="boxer-name font-bold pb-4 text-center text-gray-700">
@@ -53,7 +52,6 @@
       <div class="mt-3 btn2 text-center">View Fighter</div>
     </div>
   </div>
-</div>
 </template>
 
 <script setup>

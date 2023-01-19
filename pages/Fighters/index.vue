@@ -1,7 +1,10 @@
 <template>
+  <div class="container mt-10 justify-center gap-6 flex flex-wrap">
     <div v-for="g in gamers">
       <Fighter2 :gamer="g" />
     </div>
+  </div>
+
 </template>
 
 <script setup>
