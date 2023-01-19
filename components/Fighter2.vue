@@ -7,9 +7,12 @@
     
     <div class="absolute top-0.5 mt-3 left-0.5 ml-3 bg-[#3672bb] font-semibold text-white px-3 py-2 rounded-full text-sm">{{ gamer.ovr }}</div>
     
-    <div class="w-48 h-54 m-auto">
-      <img :src="`${gamer.img}`" class="fighter image" />
+    <div class="w-54 h-60 content-center">
+      <div class="w-48 h-54 m-auto">
+        <img :src="`${gamer.img}`" class="fighter image" />
+      </div>
     </div>
+
     
     <div>  
       <div class="boxer-name font-bold py-2 text-center text-gray-700">
