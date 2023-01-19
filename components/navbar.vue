@@ -163,7 +163,7 @@
 
       <!--mobile menu-->
       <div v-if="toggle_menu" id="mobile-menu" class="duration-300 mobile-menu md:hidden">
-        <a href="/fighters">Fighters</a>
+        <a class="block py-3 px-4 hover:bg-gray-200" href="/fighters">Fighters</a>
         <nuxt-link 
         to="/events" 
         class="block py-3 px-4 hover:bg-gray-200"

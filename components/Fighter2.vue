@@ -50,7 +50,7 @@
         <p>HT- {{ gamer.htFt }}' {{ gamer.htIn }}'', WT- {{ gamer.wt }} lbs, RCH- {{ gamer.rch }}"</p>
       </div>
     
-      <div class="mt-3 btn2 text-center"><nuxt-link :to="`/fighters/${gamer._id}`">View Fighter</nuxt-link></div>
+      <div class="mt-3 btn2 text-center"><a href="/fighters/ + `${gamer._id}`"></a></div>
     </div>
   </div>
 </div>
