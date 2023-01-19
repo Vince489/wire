@@ -9,7 +9,7 @@
     <div class="absolute top-0.5 mt-3 left-0.5 ml-3 bg-[#3672bb] font-semibold text-white px-3 py-2 rounded-full text-sm">{{ gamer.ovr }}</div>
     
     <div class="w-48 h-54 m-auto">
-      <img src="https://scontent.ftpa1-2.fna.fbcdn.net/v/t39.30808-6/322961307_551460366653891_708550471661016674_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=d8l8xzB2HAwAX_4VQ5I&_nc_ht=scontent.ftpa1-2.fna&oh=00_AfArjuSTVpcmMNko_z2afY_60xJ9ZHs5sWVs283Nj8rI9Q&oe=63CDBF9D" alt="me">
+      <img :src="`${gamer.img}`" class="fighter image" />
     </div>
     
     <div>  
