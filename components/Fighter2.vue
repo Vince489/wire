@@ -1,8 +1,8 @@
 <template>
-  <div class="relative boxer-card-container p-6 mb-6 rounded max-w-xs bg-gray-300">
+  <div class="shadow-2xl relative boxer-card-container p-6 mb-6 rounded max-w-xs bg-gray-300">
 
     <div class="boxer-name font-bold pb-4 text-center text-gray-700">
-      <h2>{{ gamer.firstName }} {{ gamer.lastName }}</h2>
+      <h2>{{ gamer.firstName }} {{ gamer.nickname }} {{ gamer.lastName }}</h2>
     </div>
     
     <div class="absolute top-0.5 mt-3 left-0.5 ml-3 bg-[#3672bb] font-semibold text-white px-3 py-2 rounded-full text-sm">{{ gamer.ovr }}</div>
