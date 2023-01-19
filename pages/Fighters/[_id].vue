@@ -4,12 +4,13 @@
     <p>{{ gamer.wins }}</p>
     <p>{{ gamer.draws }}</p>
     <p>{{ gamer.balance }}</p>   
+    <p>{{ gamer.img }}</p>   
   </div>
 </template>
 
 <script setup>
   const { _id } = useRoute().params
-  const uri = 'https://interactive-production.up.railway.app/gamers/' + _id
+  const uri = 'https://interactive-production.up.railway.app/gamers/' + _id 
 
   // fetch fighters
   const { data: gamer } = await useFetch(uri, { key: _id })
