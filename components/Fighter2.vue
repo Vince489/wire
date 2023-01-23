@@ -51,13 +51,10 @@
         <p class="font-semibold">{{ gamer.division }}</p>
         <p>HT- {{ gamer.htFt }}' {{ gamer.htIn }}'', WT- {{ gamer.wt }} lbs, RCH- {{ gamer.rch }}"</p>
       </div>
-
-      <div class="pt-4 text-center">
-        <p class="font-semibold">Earnings</p>
-        <p>${{ gamer.balance }}</p>
-      </div>
     
-      <div class="mt-3 btn2 text-center">View Fighter</div>
+      <nuxt-link :to="`/fighters/${gamer._id}`">
+      <p class="mt-3 btn2 text-center">View Fighter</p>
+    </nuxt-link>
     </div>
   </div>
 </template>
