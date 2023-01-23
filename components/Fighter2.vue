@@ -9,7 +9,10 @@
     
     <div class="w-54 h-60 content-center overflow-hidden">
       <div class="w-48 h-54 m-auto">
-        <img :src="`${gamer.img}`" class="fighter image" />
+        <nuxt-link :to="`/fighters/${gamer._id}`">
+          <img :src="`${gamer.img}`" class="fighter image" />
+        </nuxt-link>
+        
       </div>
     </div>
 

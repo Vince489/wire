@@ -1,15 +1,11 @@
 <template>
   <div class="card text-center">
-    <p>{{ gamer._id }}</p>
+    <p>Fighter ID: {{ gamer._id }}</p>
     <p>{{ gamer.firstName }}</p>
+    <p>{{ gamer.lastName }}</p>
     <img :src="gamer.img" alt="fighter image">
-    <p>{{ gamer.wins }}</p>
-    <p>{{ gamer.draws }}</p>
-    <p>{{ gamer.balance }}</p>
-    <nuxt-link :to="`/fighters/${gamer._id}`">
-      <p class="btn my-"></p>
-    </nuxt-link>   
-      
+    <p>{{ gamer.wins }} Wins</p>
+    <p>Earnings: ${{ gamer.balance }}</p>   
   </div>
 </template>
 
