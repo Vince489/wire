@@ -14,7 +14,7 @@
 <script setup>
 
 // fetch the gamer
-const { data: gamers } =  useFetch('https://interactive-production.up.railway.app/gamers')
+const { data: gamers } = await useFetch('https://interactive-production.up.railway.app/gamers')
 </script>
 
 <style scoped>
