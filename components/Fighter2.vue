@@ -56,8 +56,11 @@
       </div>
     
       <nuxt-link :to="`/fighters/${gamer._id}`">
-      <p class="mt-3 btn2 text-center">View Fighter</p>
     </nuxt-link>
+
+      <a :href="`/fighters/${gamer._id}`">
+        <p class="mt-3 btn2 text-center">View Fighter</p>
+      </a>
     </div>
   </div>
 </template>
