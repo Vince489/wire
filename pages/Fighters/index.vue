@@ -3,10 +3,6 @@
     <h2>Search and Sort features coming soon...</h2>
   </div>
 
-  <div id="fb-root"></div>
-
-  <div class="fb-comments" data-href="https://virtronboxing.club/" data-width="" data-numposts="5"></div>
-
   <div class="container mt-10 justify-center gap-6 flex flex-wrap">
     <div v-for="g in gamers">
       <Fighter2 :gamer="g" />
