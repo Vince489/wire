@@ -9,8 +9,8 @@
   </div>
 </template>
 
-<script setup>
-const { gamers } = defineProps(['gamer'])
+<script>
+  const { gamers } = defineProps(['gamer'])
   const { _id } = useRoute().params
   const uri = 'https://interactive-production.up.railway.app/gamers/' + _id 
 
