@@ -1,5 +1,5 @@
 <template>
-  <div class="container card text-center">
+  <div class="card text-center">
     <p>Fighter ID: {{ gamer._id }}</p>
     <p>{{ gamer.firstName }}</p>
     <p>{{ gamer.lastName }}</p>
@@ -9,7 +9,7 @@
   </div>
 </template>
 
-<script>
+<script setup>
   const { gamers } = defineProps(['gamer'])
   const { _id } = useRoute().params
   const uri = 'https://interactive-production.up.railway.app/gamers/' + _id 
