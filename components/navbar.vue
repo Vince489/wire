@@ -32,116 +32,21 @@
 
             <!-- primary nav-->
             <div class="hidden md:flex items-center space-x-3">
-              <a class="font-semibold py-3 px-3 text-gray-700" href="/fighters">Fighters</a>
-              <nuxt-link
-                to="/events"
-                class="font-semibold py-3 px-3 text-gray-700"
-                >Events</nuxt-link
-              >
-              <nuxt-link
-                to="/ebca"
-                class="font-semibold py-3 px-3 text-gray-700"
-                >EBCA</nuxt-link
-              >
-              <nuxt-link
-                to="/boxrec"
-                class="font-semibold py-3 px-3 text-gray-700"
-                >BoxRec</nuxt-link
-              >
+
+              <nuxt-link to="/fighters" class="font-semibold py-3 px-3 text-gray-700">Gaming</nuxt-link>
+              <nuxt-link to="#/blockchain" class="font-semibold py-3 px-3 text-gray-700">Blockchain</nuxt-link>
+              <nuxt-link to="#/about" class="font-semibold py-3 px-3 text-gray-700">About</nuxt-link>
+              <nuxt-link to="#/contact" class="font-semibold py-3 px-3 text-gray-700">Contact</nuxt-link>
+
             </div>
           </div>
 
           <!--second nav-->
-          <div class="invisible md:visible md:flex items-center space-x-1">
-            <div>
-              <div id="profile-btn">
-                <button
-                  type="button"
-                  @click="toggleProfile"
-                  class="
-                    user-button
-                    flex
-                    rounded-full
-                    bg-gray-800
-                    text-sm
-                    focus:outline-none
-                    focus:ring-2
-                    focus:ring-white
-                    focus:ring-offset-2
-                    focus:ring-offset-gray-800
-                  "
-                  id="user-menu-button"
-                  aria-expanded="false"
-                  aria-haspopup="true"
-                >
-                  <span class="sr-only">Open user menu</span>
-                  <img
-                    class="hidden h-8 w-8 rounded-full"
-                    src=""
-                  />
-                </button>
-              </div>
 
-              <div
-                v-if="toggle_profile"
-                class="
-                  user-menu
-                  absolute
-                  right-0
-                  z-10
-                  mt-2
-                  w-48
-                  origin-top-right
-                  rounded-md
-                  bg-white
-                  py-1
-                  shadow-lg
-                  ring-1 ring-black ring-opacity-5
-                  focus:outline-none
-                "
-                role="menu"
-                id="profile-menu"
-                aria-orientation="vertical"
-                aria-labelledby="user-menu-button"
-                tabindex="-1"
-              >
-                <!-- Active: "bg-gray-100", Not Active: "" -->
-                <nuxt-link
-                  to="#"
-                  class="block px-4 py-2 text-sm text-gray-700"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="user-menu-item-0"
-                  >Your Profile</nuxt-link
-                >
-                <nuxt-link
-                  to="#"
-                  class="block px-4 py-2 text-sm text-gray-700"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="user-menu-item-1"
-                  >Settings</nuxt-link
-                >
-                <nuxt-link
-                  to="#"
-                  class="block px-4 py-2 text-sm text-gray-700"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="user-menu-item-2"
-                  >Sign out</nuxt-link
-                >
-              </div>
-            </div>
-
-            <nuxt-link to="login" class="font-semibold py-1 px-3 text-gray-700"
-              >Login</nuxt-link
-            >
-            <nuxt-link to="signup" class="btn">Sign up</nuxt-link>
-          </div>
 
           <!-- mobile button-->
           <div id="menu-btn" class="md:hidden flex items-center">
-            <button @click="toggleMenu" class="mobile-menu-button">
+            <button class="mobile-menu-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -162,23 +67,26 @@
       </div>
 
       <!--mobile menu-->
-      <div v-if="toggle_menu" id="mobile-menu" class="duration-300 mobile-menu md:hidden">
-        <a class="block py-3 px-4 hover:bg-gray-200" href="/fighters">Fighters</a>
+      <div id="mobile-menu" class="hidden duration-300 mobile-menu md:hidden">
         <nuxt-link 
-        to="/events" 
-        class="block py-3 px-4 hover:bg-gray-200"
-        >Events</nuxt-link
-        >
-        <nuxt-link 
-        to="/signup" 
+        to="#/signup" 
         class="block py-3 px-4 hover:bg-gray-200"
         >Sign up</nuxt-link
         >
         <nuxt-link 
-        to="/ebca" 
+        to="#/ebca" 
         class="block py-3 px-4 hover:bg-gray-200"
         >EBCA</nuxt-link
         >
+      </div>
+
+      <div class="hidden">
+        <nuxt-link to="#login" class="font-semibold py-1 px-3 text-gray-700"
+          >Login
+        </nuxt-link>
+        <nuxt-link to="#signup" class="btn">
+          Sign up
+        </nuxt-link>
       </div>
     </nav>
 
@@ -186,36 +94,10 @@
     <div class="container p-6 pt-24">
       <slot />
     </div>
+    
   </div>
 </template>
 
 <script setup>
-  let toggle_menu = ref(false);
-  let toggle_profile = ref(false);
-
-  onMounted(() => {
-    window.addEventListener("click", function (e) {
-      console.log(document.getElementById("menu-btn").contains(e.target));
-      if (
-        document.getElementById("mobile-menu") &&
-        !document.getElementById("menu-btn").contains(e.target)
-      ) {
-        toggle_menu.value = false;
-      }
-      if (
-        document.getElementById("profile-menu") &&
-        !document.getElementById("profile-btn").contains(e.target)
-      ) {
-        toggle_profile.value = false;
-      }
-    });
-  });
-
-  function toggleMenu() {
-    toggle_menu.value = !toggle_menu.value;
-  }
-
-  function toggleProfile() {
-    toggle_profile.value = !toggle_profile.value;
-  }
+  
 </script>
