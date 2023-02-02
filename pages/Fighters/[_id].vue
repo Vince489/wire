@@ -1,5 +1,5 @@
 <template>
-  <div class="card text-center">
+  <div class="container card text-center">
     <p>Fighter ID: {{ gamer._id }}</p>
     <p>{{ gamer.firstName }}</p>
     <p>{{ gamer.lastName }}</p>
