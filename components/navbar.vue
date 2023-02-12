@@ -33,7 +33,7 @@
             <!-- primary nav-->
             <div class="hidden md:flex items-center space-x-3">
 
-              <nuxt-link to="/fighters" class="font-semibold py-3 px-3 text-gray-700">Gaming</nuxt-link>
+              <a href="/fighters" class="font-semibold py-3 px-3 text-gray-700">Fighters</a>
               <nuxt-link to="#/blockchain" class="font-semibold py-3 px-3 text-gray-700">Blockchain</nuxt-link>
               <nuxt-link to="#/about" class="font-semibold py-3 px-3 text-gray-700">About</nuxt-link>
               <nuxt-link to="#/contact" class="font-semibold py-3 px-3 text-gray-700">Contact</nuxt-link>
